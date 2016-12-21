@@ -23,3 +23,12 @@ print(same) #false
 
 #copy and deep copy http://stackoverflow.com/questions/17246693/what-exactly-is-the-difference-between-shallow-copy-deepcopy-and-normal-assignm
 # essentially deepcopy is good for lists of lists cause if you just copy, there is a new outer list but the lists inside are just references.
+
+#function to print stuff in a list seperated with comma
+
+def PrintList(list):
+    for x in list[:-2]: #also surprisingly still works when given list with length 2.
+        print(x, end=', ')
+    print(list[-2], end=' and ')
+    print(list[-1])
+        
